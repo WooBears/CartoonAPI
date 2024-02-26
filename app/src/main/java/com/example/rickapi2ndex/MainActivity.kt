@@ -1,15 +1,20 @@
 package com.example.rickapi2ndex
 
 import android.annotation.SuppressLint
+import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.rickapi2ndex.adapter.CartoonAdapter
 import com.example.rickapi2ndex.data.CartoonApiService
 import com.example.rickapi2ndex.databinding.ActivityMainBinding
+import com.squareup.picasso.Picasso
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
+import retrofit2.Retrofit
 import javax.inject.Inject
 
 @AndroidEntryPoint

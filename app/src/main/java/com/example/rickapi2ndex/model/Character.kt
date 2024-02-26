@@ -4,6 +4,7 @@ data class Character (
     val info: Information,
     val results: List<Result>
 )
+
 data class Information (
     val count: Int,
     val pages: Int,
@@ -28,6 +29,7 @@ data class Origin(
     val name: String,
     val url: String
 )
+
 data class Location(
     val name: String,
     val url: String

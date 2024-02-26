@@ -1,13 +1,11 @@
 package com.example.rickapi2ndex.adapter
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rickapi2ndex.databinding.ItemCartoonBinding
-import com.example.rickapi2ndex.model.Character
 import com.example.rickapi2ndex.model.Result
 import com.squareup.picasso.Picasso
 

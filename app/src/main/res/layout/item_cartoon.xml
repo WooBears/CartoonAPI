@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:background="#998399"
     android:layout_margin="5dp"
-    android:backgroundTint="#878360"
     android:padding="5dp">
 
     <ImageView
@@ -41,8 +40,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ci_dead_status"
-        android:layout_width="13dp"
-        android:layout_height="13dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:src="@mipmap/ic_launcher"
         android:visibility="gone"
         app:civ_border_color="#DF0517"
@@ -53,11 +52,11 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ci_unknown_status"
-        android:layout_width="13dp"
-        android:layout_height="13dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:src="@mipmap/ic_launcher"
         android:visibility="gone"
-        app:civ_border_color="#999999"
+        app:civ_border_color="#878383"
         app:civ_border_width="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_status"
         app:layout_constraintEnd_toStartOf="@+id/tv_status"
@@ -100,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Last known location:"
-        android:textSize="10dp"
+        android:textSize="8dp"
         app:layout_constraintStart_toStartOf="@+id/tv_status"
         app:layout_constraintTop_toBottomOf="@+id/tv_status" />
 
@@ -116,9 +115,9 @@
         android:id="@+id/tv_hint_seen_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:hint="First seen in:"
-        android:layout_marginTop="5dp"
-        android:textSize="10dp"
+        android:textSize="8dp"
         app:layout_constraintStart_toStartOf="@+id/tv_location"
         app:layout_constraintTop_toBottomOf="@+id/tv_location" />
 

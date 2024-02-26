@@ -8,11 +8,9 @@ import retrofit2.http.Path
 
 interface CartoonApiService {
 
-    //get all characters
     @GET("character")
     suspend fun getAllCartoons() : Character
 
-    //get a single character
     @GET("character/{id}")
-    suspend fun getSingleCartoons(@Path("id") id: Int): Result
+    suspend fun getAllCharacters(@Path("id") id: Int) : Result
 }
